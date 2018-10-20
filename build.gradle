@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://oss.sonatype.org/content/repositories/iovertx-3783/"
+    }
+}
+
+sourceCompatibility = '1.8'
+mainClassName = 'io.vertx.core.Launcher'
+
+dependencies {
+    compile 'io.vertx:vertx-web-client:3.5.4'
+    compile 'io.vertx:vertx-rx-java:3.5.4'
+    compile 'io.vertx:vertx-junit5:3.5.4'
+    compile 'org.mongodb:mongo-java-driver:3.8.2'
+    compile 'org.mongodb:bson:3.8.2'
+
+}
+
+sourceSets {
+    main {
+        output.resourcesDir = "out/production/classes"
+    }
+    test {
+        output.resourcesDir = "out/production/classes/test"
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '5.0'
+}

@@ -1,0 +1,17 @@
+{
+  "secrets": {
+    "cobrandSecrets": {
+      "cobrandLogin": "sbCobd05d571fcf9c78d9184e1d6c86cc49f22Sk",
+      "cobrandPassword": "7ddf65c5-5137-40fa-ac21-fc3fb6d13a39"
+    },
+    "userSecrets": {
+      "loginName": "sbMemd05d571fcf9c78d9184e1d6c86cc49f22Sk2",
+      "password": "sbMemd05d571fcf9c78d9184e1d6c86cc49f22Sk2#123"
+    },
+    "databaseSecrets": {
+      "uri": "mongodb+srv://Vighnesh:hpsMcVLNg6oT9lJc@vighnesh-2hokb.mongodb.net/",
+      "userName": "Vighnesh",
+      "password": "hpsMcVLNg6oT9lJc"
+    }
+  }
+}
